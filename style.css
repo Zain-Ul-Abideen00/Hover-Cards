@@ -1,0 +1,79 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    background-image: url(./Images/CachedImage_1920_1080_POS4.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.cards{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    width: 400px;
+    border: 4px solid rgb(255, 183, 0);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#im1{
+    object-fit: cover;
+    margin-bottom: 35px;
+}
+
+#im2{
+    height: 100%;
+    object-fit: cover;
+}
+
+#im3, #im4, #im1{
+    width: 100%;
+    object-fit: cover;
+}
+
+#card1{
+    z-index: 4;
+}
+
+#card2{
+    transform: translate(-50%, -50%) rotate(-10deg);
+    z-index: 3;;
+}
+
+#card3{
+    transform: translate(-50%, -50%) rotate(-20deg);
+    z-index: 2;
+}
+
+#card4{
+    transform: translate(-50%, -50%) rotate(-30deg);
+    z-index: 1;
+}
+
+#card2:hover{
+    z-index: 5;
+}
+
+#card3:hover{
+    z-index: 5;
+}
+
+#card4:hover{
+    z-index: 5;
+}
